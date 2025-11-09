@@ -36,7 +36,7 @@ const Header = () => {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slide-up animation-delay-600">
           <a
-            href="public/resume.pdf"               // Path to resume in public folder
+            href="/Portfolio/resume.pdf"               // Path to resume in public folder
             download                         // Trigger browser download
             target="_blank"                  // Fallback: opens in new tab if download fails
             rel="noopener noreferrer"        // Security best practice
