@@ -36,13 +36,16 @@ const Header = () => {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slide-up animation-delay-600">
           <a
-            href="/resume.pdf"
-            download
+            href="/resume.pdf"               // Path to resume in public folder
+            download                         // Trigger browser download
+            target="_blank"                  // Fallback: opens in new tab if download fails
+            rel="noopener noreferrer"        // Security best practice
             className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all"
           >
             <Download className="w-5 h-5" />
             Download Resume
           </a>
+
         </div>
 
         <p className="text-gray-500 mt-8 text-sm animate-fade-in animation-delay-800">
