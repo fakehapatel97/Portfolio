@@ -16,7 +16,7 @@ const About = () => {
               <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full blur opacity-25 group-hover:opacity-75 transition duration-300"></div>
               <div className="relative w-64 h-64 rounded-full overflow-hidden flex items-center justify-center">
                 <img
-                  src="/photo.jpeg" // ✅ path from public folder
+                  src="/Portfolio/photo.jpeg" // // ✅ path from public folder
                   alt="Fakeha Patel"
                   className="w-full h-full object-cover"
                 />
