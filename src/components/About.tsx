@@ -1,5 +1,3 @@
-import { User } from 'lucide-react';
-
 const About = () => {
   return (
     <section id="about" className="py-20 bg-white">
@@ -12,15 +10,21 @@ const About = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
+          {/* Photo */}
           <div className="flex justify-center">
             <div className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full blur opacity-25 group-hover:opacity-75 transition duration-300"></div>
-              <div className="relative w-64 h-64 bg-gradient-to-br from-blue-100 to-purple-100 rounded-full flex items-center justify-center">
-                <User className="w-32 h-32 text-blue-600" />
+              <div className="relative w-64 h-64 rounded-full overflow-hidden flex items-center justify-center">
+                <img
+                  src="/photo.jpeg" // ✅ path from public folder
+                  alt="Fakeha Patel"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
 
+          {/* About Text */}
           <div className="space-y-6">
             <p className="text-lg text-gray-700 leading-relaxed">
               Passionate and results-driven marketing professional with expertise in{' '}
